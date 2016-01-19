@@ -1,0 +1,17 @@
+# PRINT ALL FILES  FOLDER DEPTH ONE IN A DIRECTORY
+
+find /Users/markostamenovic/Desktop/testpapers -type f -maxdepth 1 -not -delete
+
+for i in *; do 
+echo $i
+done;
+
+# CHANGE CANVAS SIZE
+
+for i in *; do  convert $i -extent 3570x660 -quality 80 $i; done;
+
+
+# SCALE VERTICAL DIMENSION AND QUALITY
+
+for i in *; do  convert $i -resize x300 -quality 80 $i; done;
+
