@@ -1,4 +1,4 @@
-# imageScripts.sh
+# pdfJpg.sh
 Bash script to convert a bunch of PDF's in a folder into a bunch concatenated JPG's of a given height
 
 requires Imagemagick (available on pip on OSX or apt-get on linux)
@@ -7,7 +7,7 @@ requires Imagemagick (available on pip on OSX or apt-get on linux)
 
 cd /path/to/script
 
-./imageScripts
+./pdfJpg.sh
 
 follow prompts
 
