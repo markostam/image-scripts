@@ -1,4 +1,4 @@
-# image-scripts
+# imageScripts.sh
 Bash script to convert a bunch of PDF's in a folder into a bunch concatenated JPG's of a given height
 
 requires Imagemagick (available on pip on OSX or apt-get on linux)
@@ -21,7 +21,24 @@ follow prompts
 
 /concat_jpg:		concatenated jpgs 
 
-## additional
+# pdfTxt.sh
+Script to convert a bunch of PDF's into a bunch extracted .TXT's
+
+requires pdf2text (brew install poppler on OSX)
+
+## Usage
+
+./pdfTxt.sh
+
+follow prompts
+
+## Output
+
+1 folders created in the destination location:
+
+/txt:			converted txt's
+
+# additional
 
 additional scripts if needed
 
