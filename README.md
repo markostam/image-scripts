@@ -5,6 +5,7 @@ requires Imagemagick (available on pip on OSX or apt-get on linux)
 
 ## Usage:
 ./imageScripts
+
 follow prompts
 
 3 folders created in the original dataset location:
