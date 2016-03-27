@@ -15,31 +15,39 @@ follow prompts
 
 3 folders created in the original dataset location:
 
-/og_pdf:			original pdfs
-
-/small_jpgs:		pagewise jpgs
-
-/concat_jpg:		concatenated jpgs 
-
+original pdfs:
+```
+/og_pdf:			
+```
+pagewise jpgs:
+```
+/small_jpgs:		
+```
+concatenated jpgs:
+```
+/concat_jpg:		 
+```
 # pdfTxt.sh
 Script to convert a bunch of PDF's into a bunch extracted .TXT's
 
 requires pdf2text (brew install poppler on OSX)
 
 ## Usage
-
+```
 cd /path/to/script
 
 ./pdfTxt.sh
-
+```
 follow prompts
 
 ## Output
 
 1 folders created in the destination location:
 
-/txt:			converted txt's
-
+converted txt's
+```
+/txt:			
+```
 # additional
 
 additional scripts if needed
