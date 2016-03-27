@@ -28,6 +28,8 @@ requires pdf2text (brew install poppler on OSX)
 
 ## Usage
 
+cd /path/to/script
+
 ./pdfTxt.sh
 
 follow prompts
