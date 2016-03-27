@@ -1,7 +1,7 @@
 #!/bin/bash
 ##########################################################################################################
 # Script to convert a bunch of PDF's in a folder into a bunch concatenated JPG's of a given height
-# Requires Imagemagick (available on pip on OSX or apt-get on linux)
+# requires Imagemagick (available on pip on OSX or apt-get on linux)
 #
 # Usage:
 # ./imageScripts
@@ -57,15 +57,14 @@ shopt -s extglob #enable external global (! = except)
 for f in "$small_jpgs"/*; do 
 
 	echo "concatenating "$f""
-	#### LOW DENSITY IS CURRENTLY SET FOR A 300px HEIGHT ######
+	#### CONVERSION SET FOR AROUND 300px HEIGHT WITH -density 27.3 ######
+	#### INCREASE -density FOR BETTER QUALITY ######
 	for i in "$f"/*; do convert -density 27.3 "$i" "$i".jpg; done  #convert pdf to jpg
-	#find "$f" -name '*.pdf' -exec mv {} "$og_pdf" \; #move pdf to pdf folder
 	mv "$f/$(basename "$f").pdf" "$og_pdf" #move pdf to pdf folder #faster than find
 
+	#if fileheight is not speicified height, convert all files in dir to correct height
 	first="$(find "$f" -name '*.jpg' | head -n 1)" #get filename of one file in dir
 	ht="$(identify -format "%h" $first)" #identify pixel height of that file
-
-	#if fileheight is not speicified height, convert all files in dir to correct height
 	if (("$ht"!="$height")); then
 		for i in "$f"/*; do convert "$i" -resize x$height "$i"; done #change resolution on y axis
 	fi
