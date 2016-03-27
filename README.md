@@ -4,6 +4,8 @@ Bash script to convert a bunch of PDF's in a folder into a bunch concatenated JP
 requires Imagemagick (available on pip on OSX or apt-get on linux)
 
 ## Usage:
+
+cd /path/to/script
 ./imageScripts
 
 follow prompts
