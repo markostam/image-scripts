@@ -17,15 +17,15 @@ follow prompts
 
 original pdfs:
 ```
-/og_pdf:			
+/og_pdf
 ```
 pagewise jpgs:
 ```
-/small_jpgs:		
+/small_jpgs
 ```
 concatenated jpgs:
 ```
-/concat_jpg:		 
+/concat_jpg
 ```
 # pdfTxt.sh
 Script to convert a bunch of PDF's into a bunch extracted .TXT's
@@ -44,9 +44,9 @@ follow prompts
 
 1 folders created in the destination location:
 
-converted txt's
+converted txt's:
 ```
-/txt:			
+/txt			
 ```
 # additional
 
