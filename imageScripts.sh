@@ -1,6 +1,7 @@
 #!/bin/bash
 ##########################################################################################################
 # Script to convert a bunch of PDF's in a folder into a bunch concatenated JPG's of a given height
+# Requires Imagemagick (available on pip on OSX or apt-get on linux)
 #
 # Usage:
 # ./imageScripts
