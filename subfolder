@@ -1,8 +1,0 @@
-# MOVE PDFS INTO SUBFOLDERS OF THEIR OWN NAME
-
-for f in *; do
-  size=${#f} #get size of filename
-  let size-=4 #remove .pdf from size of filename
-  dir=${f:0:$size} #change filename
-  mkdir -p "$dir" && mv "$f" "$dir" #create new file with pdf in it
-done
