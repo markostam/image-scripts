@@ -56,7 +56,7 @@ shopt -s extglob #enable external global (! = except)
 
 for f in "$small_jpgs"/*; do 
 
-	echo "concatenating "$f""
+	echo "concatenating: "$f""
 	#### CONVERSION SET FOR AROUND 300px HEIGHT WITH -density 27.3 ######
 	#### INCREASE -density FOR BETTER QUALITY ######
 	for i in "$f"/*; do convert -density 27.3 "$i" "$i".jpg; done  #convert pdf to jpg
