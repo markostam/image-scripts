@@ -74,7 +74,7 @@ for f in "$small_jpgs"/*; do
 
 done;
 
-echo "4) done"
+echo "4) finished"
 
 shopt -u extglob #disable external global (! = except)
 
