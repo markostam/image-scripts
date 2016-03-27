@@ -3,8 +3,7 @@
 # requires pdf2text (brew install poppler on OSX)
 #
 # Usage:
-# ./pdfTxt.sh
-# follow prompts
+#output
 #
 # 1 folders created in the destination location:
 # /txt:			converted txt's
@@ -28,4 +27,3 @@ for f in "$folder"/*; do
 	echo "converting to txt: "$f""
 	pdftotext "$f" "$txt/$(basename "$f").txt"
 done
-
