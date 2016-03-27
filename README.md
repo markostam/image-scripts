@@ -6,6 +6,7 @@ requires Imagemagick (available on pip on OSX or apt-get on linux)
 ## Usage:
 
 cd /path/to/script
+
 ./imageScripts
 
 follow prompts
